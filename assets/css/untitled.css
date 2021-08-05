@@ -1,0 +1,41 @@
+.caption1 {
+  background-image: url('https://media.tenor.com/images/42eaf9df583face7d96744cc82805253/tenor.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width:767px) {
+  .mobile-centre {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 20px; */
+    padding: 10px;
+  }
+  .small-text{
+    width: 200px;
+  }
+  .card-body {
+    padding: 10px;
+  }
+}
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader > img {
+  width: 30%;
+
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
